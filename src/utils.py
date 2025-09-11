@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+import scienceplots
+
 import os
 from src.constants import *
 import pandas as pd 
