@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+import scienceplots
+
 from matplotlib.backends.backend_pdf import PdfPages
 import statistics
 import os, torch
@@ -7,6 +9,9 @@ import numpy as np
 plt.style.use(['science', 'ieee'])
 plt.rcParams["text.usetex"] = False
 plt.rcParams['figure.figsize'] = 6, 2
+plt.rcParams["font.family"] = "serif"
+plt.rcParams["font.serif"] = ["DejaVu Serif"]  # 기본 + 안전
+
 
 os.makedirs('plots', exist_ok=True)
 
